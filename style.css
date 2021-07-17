@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --main-background: #090b1a;
+    --card-background: #1b1938;
+    --soft-violet: #aa5cdb;
+    --white: #fffdfd;
+    --main-paragh: hsla(0, 0%, 100%, 0.75);
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--main-background);
+   
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: var(--card-background);
+    margin: 100px;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    width: 80%;
+    height: 400px;
+    max-width: 1400px;
+    
+}
+
+h2 {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+
+span {
+    color: var(--soft-violet);
+}
+
+p {
+    color: var(--main-paragh);
+    line-height: 1.7;
+    font-size: 15px;
+    text-align: left;
+}
+
+
+.img {
+    position: relative;
+    background-image: url("/img/image-header-mobile.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    height: auto;
+    width: 50%;
+    overflow: hidden;
+}
+
+.img::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--soft-violet);
+    opacity: 0.3;
+}
+
+.main-header {
+    color: var(--white);
+    width: 45%;
+    text-align: justify;
+    padding: 50px;
+    margin-right: 40px;
+    max-width: 1400px;
+}
+
+.main-header p {
+    padding-bottom: 55px ;
+}
+
+.main-header h2 {
+    font-size: 30px;
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.data {
+    line-height: 1.6;
+    text-align: left;
+    height: 60px;
+}
+
+.data p {
+    font-size: 12px;
+}
+
+.data h4 {
+    font-size: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+   .container {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--card-background);
+        border-radius: 8px;
+        font-family: 'Inter', sans-serif;
+        width: 80%;
+        height: 800px;
+        margin: 10%;
+    
+    }
+
+   .main-header {
+    color: var(--white);
+    width: 100%;
+    height: 220px;
+    text-align: center;
+    padding: 10px;
+    margin: 0%;
+   }
+
+   .main-header p {
+       height: 140px;
+        padding-bottom: 20px ;
+        text-align: center;
+    }
+
+    .main-header h2 {
+        font-size: 28px;
+        text-align: center;
+        padding-top: 20px;
+        line-height: 1.2;
+    }
+
+    .img {
+        position: relative;
+        background-image: url("/img/image-header-mobile.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+        border-bottom-right-radius: 0;
+        height: 250px;
+        width: 100%;
+        /* overflow: hidden; */
+    }
+
+    .stats {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 220px;
+        width: 100%;
+    }
+
+    .data {
+        text-align: center;
+        line-height: 1.5;
+        padding-bottom: 20px;
+        width: 100%;
+    }
+}
+
+/* Tablets */
+@media (width: 768px) {
+    .container {
+         display: flex;
+         flex-direction: column;
+         background-color: var(--card-background);
+         border-radius: 8px;
+         font-family: 'Inter', sans-serif;
+         width: 80%;
+         height: 900px;
+         margin: 10%;
+     
+     }
+ 
+    .main-header {
+     color: var(--white);
+     width: 100%;
+     height: 100px;
+     text-align: center;
+     padding: 10px;
+     margin: 0%;
+    }
+ 
+    .main-header p {
+        height: 90px;
+         padding-bottom: 20px ;
+         text-align: center;
+     }
+ 
+     .main-header h2 {
+         font-size: 28px;
+         text-align: center;
+         padding-top: 20px;
+         line-height: 1.2;
+     }
+ 
+     .img {
+         position: relative;
+         background-image: url("/img/image-header-mobile.jpg");
+         background-position: center center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         border-top-right-radius: 8px;
+         border-top-left-radius: 8px;
+         border-bottom-right-radius: 0;
+         height: 450px;
+         width: 100%;
+     }
+ 
+     .stats {
+         display: flex;
+         align-items: center;
+         flex-direction: column;
+         height: 220px;
+         width: 100%;
+     }
+ 
+     .data {
+         text-align: center;
+         line-height: 1.5;
+         padding-bottom: 20px;
+         width: 100%;
+     }
+ }
+
+
